@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surah al-fateha</title>
+     <!-- -------------------------------------------style-------------------------------------------------- -->
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav {
+        background-color: rgb(187, 187, 187);
+        height: 4.5rem;
+    position: sticky;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        
+    }
+    .logo{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    
+    
+    
+    .name{
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+    }
+    .main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-top: 1rem;
+
+    }
+
+    .dua{
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        text-align: center;
+        border: 4px solid gray;
+    }
+
+h6{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10rem;
+
+}
+
+h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+        line-height: 3rem;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-top:-5.5rem; 
+    margin-bottom:rem;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    background-color: rgba(0, 225, 255, 0.349);
+    text-align: center;
+    
+}
+
+h3{
+    font-size: 1rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h5{
+    font-size: 1.2rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+}
+
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+}
+
+
+
+
+.name{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+.main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-top: 1rem;
+
+    }
+
+    .dua{
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        text-align: center;
+        border: 4px solid gray;
+    }
+
+h6{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10rem;
+
+}
+
+h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+        line-height: 3rem;
+
+}
+
+h1{
+    font-size: 1rem;
+    margin-top:-5.5rem; 
+    margin-bottom:rem;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    background-color: rgba(0, 225, 255, 0.349);
+    text-align: center;
+    
+}
+
+h3{
+    font-size: 1rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h5{
+    font-size: 1.2rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+    </div>
+
+        <div class="main">
+            
+            <div class="dua">
+                <h6>01 </h6><br>
+                    <h1> [Before eating] <br>
+                    
+                     [తినడానికి ముందు]</h1>
+                     <h2>بِسْمِ اللَّهِ وَعَلَى بَرَكَةِ اللَّهِ</h2>
+                        <h3> Shuru karta hu allah ke naam se jo bada meharbaan ,Barkat denewala hai</h3>
+                        <h4> Bismillahi waala barkatullah</h4>
+                        <h3>In the name of Allah and with the blessings of Allah I begin (eating)</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లాహ్ పేరిట మరియు అల్లాహ్ ఆశీర్వాదంతో నేను (తినడం) ప్రారంభిస్తాను</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>02  </h6> <br> <h1> [After Eating]<br>
+                        [తిన్న తరువాత]</h1>
+                        <h2>الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِينَ</h2>
+                        <h3>Sab Tareef Allah ke liyejisne hame khane ke liye khana aur peene ke liye paani diya Aur hame Musalmaan banaya</h3>
+                        <h4>Alhamdulillahilladhii ath’amanaa wa saqaanaa wa ja’alanaa minalmuslimiin.</h4>
+                        <h3> All praise and gratitude is due to Allah Who has fed us and given us drink, and Who has made us Muslims.</h3>
+                        <h5>telugu</h5>
+                        <h3>మనకు తినిపించి, త్రాగి, మనల్ని ముస్లింలుగా చేసిన అల్లాహ్‌కే అన్ని ప్రశంసలు మరియు కృతజ్ఞతలు</h3>
+                
+                </div>
+            
+
+                <div class="dua">
+                    <h6>03</h6> <br> <h1> [when forgetting to recite <br> the dua before eating]<br>
+                        [తినే ముందు దువా చదవడం మర్చిపోతారు]
+                    </h1>
+                        <h2>بِسْمِ اللَّهِ أَوَّلِه ِِ وَآخِرِهِ</h2>
+                        <h3> Shuruwat Aur Khatam sirf Allah ke naam se</h3>
+                        <h4>Bismillahi awwalihi wa akhirihh</h4>
+                        <h3> In the Name of Allah, in the beginning, and the end.</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లాహ్ పేరిట, ప్రారంభంలో మరియు ముగింపులో.</h3>
+                
+                </div>
+            
+
+                <div class="dua">
+                    <h6>04 </h6> <br> <h1>[Before Sleeping] <br>
+                         
+                        [నిద్రపోయే ముందు]</h1>
+                        <h2>اَللّهُمَّ بِسْمِكَ أَمُوْتُ وَ أَحْيَ</h2>
+                        <h3> Ya Allah, Tere naam lete hue hum jeete hai aur marte hai</h3>
+                        <h4>Allahumma Bismika amootu wa-ahya</h4>
+                        <h3>  Oh Allah, I live and die calling your name.</h3>
+                        <h5>telugu</h5>
+                        <h3>ఓ అల్లాహ్, నేను నీ పేరు చెప్పుకుంటూ బ్రతుకుతాను</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>05 </h6><br> <h1> [On awakening from sleep] <br>
+                        [నిద్ర నుండి మేల్కొన్నప్పుడు] </h1>
+                        
+                        <h2>الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ<h2>
+                            النُّشُورُ
+                            <h3>Sab tareef Allah ke liye jisne hame zinda kiya marne ke baad,Aur hame allah ke pass laut ke jana hai</h3>
+                        <h4>Allhumdulillahi laazi ahyaana baada maa aamataana wa ilaihin nushuru</h4>
+                        <h3>All praise be to Allah, who gave us life after killing us (sleep is a form of death) and to Him will we be raised and returned</h3>
+                        <h5>telugu</h5>
+                        <h3>మనల్ని చంపిన తర్వాత మనకు జీవితాన్ని ఇచ్చిన అల్లాహ్‌కే అన్ని స్తుతులు (నిద్ర అనేది మరణం యొక్క ఒక రూపం) మరియు మనం లేపబడతాము మరియు తిరిగి వస్తాము</h3>
+                
+                </div>
+
+
+               
+
+                <div class="dua">
+                    <h6>06 </h6> <br> <h1> [When thanking someone] <br>
+                        [ఒకరికి ధన్యవాదాలు చెప్పేటప్పుడు]
+                        []</h1>
+                        <h2>جَزاكَ اللهُ خَـيْراً</h2>
+                        <h3> Allah apko enaam se nawaze</h3>
+                        <h4>Jazaakallaahu khayran</h4>
+                        <h3> May Allah reward you with good</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లా మీకు మంచి ప్రతిఫలమివ్వాలి</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>07 </h6> <br> <h1> [When Sneezing] <br>
+                        [తుమ్మినప్పుడు]
+                        </h1>
+                        <h2>اَلْحَمْدُ لِلَّهِ</h2>
+                        <h3> Sab Tareef Allah ke Liye</h3>
+                        <h4>Alhamdu lillaahi</h4>
+                        <h3> All praise is for Allah.</h3>
+                        <h5>telugu</h5>
+                        <h3>అన్ని ప్రశంసలు అల్లాహ్‌కే</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>08 </h6> <br> <h1> [while sneezing (the listeners reply)] <br>
+                        [  తుమ్మినప్పుడు వినేవారి సమాధానం]
+                        </h1>
+                        <h2>يَرْحَمُكَ اللَّهُ</h2>
+                        <h3> Allah apko salamat rakhe</h3>
+                        <h4>Yarhamuk Allah</h4>
+                        <h3> Allah have Mercy on you</h3>
+                        <h5>telugu</h5>
+                        <h3>దేవుడు నిన్ను దీవించును</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>09 </h6> <br> <h1> [The Sneezers Response] <br>
+                        [ఎవరు తుమ్ముతున్నారు వారి ప్రతిస్పందనను] 
+                        </h1>
+                        <h2>يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ</h2>
+                        <h3>Allah apko sahi rastha dikhaye</h3>
+                        <h4>Yahdikumullahu wa yuslihu balkum</h4>
+                        <h3> Aallah guide you and rectify your affairs</h3>
+                        <h5>dua nai jisa meaning dikhata hai</h5>
+                        <h3>అల్లాహ్ మీకు మార్గదర్శకత్వం వహిస్తాడు మరియు మీ వ్యవహారాలను సరిదిద్దుతాడు</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>10 </h6> <br> <h1> [For increase in Knowledge] <br>
+                        [జ్ఞానం పెరుగుదల కోసం]
+                        </h1>
+                        <h2>رَّبِّ زِدْنِيْ عِلْمًا</h2>
+                        <h3> Ya Rab, Mere Ilm mei izakha farma</h3>
+                        <h4>Rabbi Zidnee I’lmaa</h4>
+                        <h3> My Lord, increase me in knowledge.</h3>
+                        <h5>రబ్బీ జిద్నీ ఐ'ల్మా</h5>
+                        <h3>నా ప్రభూ, నాకు జ్ఞానాన్ని పెంచుము</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>11 </h6> <br> <h1> [Before Wudhu] <br>
+                        
+                        [వుదూ ముందు]</h1>
+                        <h2>بِسْمِ اللّٰهِ</h2>
+                        <h3>Shuru Allah ke naam se</h3>
+                        <h4>Bismillaahi</h4>
+                        <h3>In the Name of Allah</h3>
+                        <h5>బిస్మిల్లా</h5>
+                        <h3>అల్లా పేరుతో</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>12 </h6> <br> <h1> [During Wudhu] <br>
+                        [వుదు సమయంలో]
+                        </h1>
+                        <h2>اللَّهُمَّ اغْفِرْ لِي ذَنْبِي وَوَسِّعْ لِي فِي دَارِي وَبَارِكْ لِي فِي رِزْقِي</h2>
+                        <h3>Ya Allah,Mere Gunah maaf farma,mere khabar mei roshni farma aur mere rizq mei barkat ata farma</h3>
+                        <h4>Allahummag fir lee janbee wa wassee lee fee darie wabarik lee fee rizkhee</h4>
+                        <h3>O Allah, forgive my sins and widen my grave and grant barakat in my Rizq </h3>
+                        <h5>telugu</h5>
+                        <h3>ఓ అల్లాహ్, నా పాపాలను క్షమించు మరియు నా సమాధిని విస్తృతం చేయండి మరియు నా రిజ్క్‌లో బరాకత్ ఇవ్వండి</h3>
+                
+                </div>
+                
+
+                
+
+                <div class="dua">
+                    <h6>13 </h6> <br> <h1> [After Wudhu] <br>
+                        [వుదూ తరువాత]
+                        </h1>
+                        <h2>أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللّٰهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ</h2>
+                        <h3>My gawahi deta hu ki allah ke siwa kisi ki ibadat ka haq nai jiska koi shareek nahi aur my gawahi deta hu ki Mohammad uske bande aur uske rasool hai</h3>
+                        <h4>Ash-hadu 'an laa 'ilaaha 'illallaahu wahdahu laa shareeka lahu wa 'ash-hadu 'anna Muhammadan 'abduhu wa Rasooluhu.</h4>
+                        <h3>I bear witness that none has the right to be worshipped but Allah alone, Who has no partner; and I bear witness that Muhammad is His slave and His Messenger</h3>
+                        <h5>అష్ హదు అల్లా ఇలాహ ఇల్లల్లాహు వహ్ దహు లాషరీక బహు వ అష్ హదు అన్న ముహమ్మదన్ అబ్దుహు వ రసూలుహు</h5>
+                        <h3>ఆరాధించబడే హక్కు ఎవరికీ లేదని నేను సాక్ష్యమిస్తున్నాను, అల్లాహ్ మాత్రమే, అతనికి భాగస్వామి లేదు; మరియు ముహమ్మద్ అతని బానిస మరియు అతని దూత అని నేను సాక్ష్యమిస్తున్నాను</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>14 </h6> <br> <h1> [When Entering Masjid] <br>
+                        [మసీదులోకి ప్రవేశించినప్పుడు]
+                        </h1>
+                        <h2>اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ</h2>
+                        <h3>Ya allah mere liye apne rehmat ke darwaze khol de</h3>
+                        <h4>Allaahum-maf tah lee abwaaba rahmatika.</h4>
+                        <h3> Oh Allah, open the gates of Your mercy for me.</h3>
+                        <h5>telugu</h5>
+                        <h3>ఓ అల్లాహ్, నీ దయ యొక్క ద్వారాలను నా కోసం తెరవండి.</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>15 </h6> <br> <h1> [When Leaving Masjid] <br>
+                        [మసీదు నుండి బయలుదేరినప్పుడు]</h1>
+                        <h2>اَللّٰهُمَّ إنِّي أَسْأَلُكَ مِنْ فَضْلِكَ</h2>
+                        <h3> Ya Allah my tera fazal mangta hu</h3>
+                        <h4>Allahumma Inni As’aluka Min Fadlik</h4>
+                        <h3>O Allah, I ask for Your favour</h3>
+                        <h5>telugu</h5>
+                        <h3>ఓ అల్లాహ్, నేను నీ దయ కోసం అడుగుతున్నాను</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>16 </h6> <br> <h1> [When Drinking Water] <br>
+                        [నీరు త్రాగేటప్పుడు]
+                        </h1>
+                        <h2>بِسْمِ اللَّهِ</h2>
+                        <h3> Shuru Allah ke naam se</h3>
+                        <h4>Bismillah</h4>
+                        <h3> In the namae of allah</h3>
+                        <h5>బిస్మిల్లా</h5>
+                        <h3>అల్లా పేరుతో </h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>17 </h6> <br> <h1> [When finished Drinking Water] <br>
+                        [తాగునీరు పూర్తయ్యాక]
+                        </h1>
+                        <h2>الْحَمْدُ لِلَّهِ</h2>
+                        <h3>Tamaam tareeefe allah ke liye</h3>
+                        <h4>Alhumdulilah</h4>
+                        <h3>All praise to Allah</h3>
+                        <h5>అల్హమ్దులిల్:</h5>
+                        <h3>telugu meaning</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>18 </h6> <br> <h1>  [When Entering Home] <br>
+                        [ఇంట్లోకి ప్రవేశించేటప్పుడు]
+                        </h1>
+                        <h2>بِسْـمِ اللّهِ وَلَجْنـَا، وَبِسْـمِ اللّهِ خَـرَجْنـَا، وَعَلَـى رَبِّنـَا تَوَكّلْـنَا.</h2>
+                        <h3> Allah ke naam se hum dhakhil hote hai aur allah ke naam pe nikalte hai aur apne rab per bharosa rakhte hai</h3>
+                        <h4>Bismil-lahi walajna, wabismil-lahi kharajna, waAAala rabbina tawakkalna.</h4>
+                        <h3>In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we place our trust.</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లాహ్ పేరిట మేము ప్రవేశిస్తాము మరియు అల్లాహ్ నామంలో మేము వదిలివేస్తాము మరియు మా ప్రభువుపై మన విశ్వాసం ఉంచాము</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>19 </h6> <br> <h1>[When Leaving Home] <br>
+                        [ఇంటి నుండి బయలుదేరినప్పుడు]
+                        </h1>
+                        <h2>بِسْمِ اللَّهِ تَوَكَّلْـتُ عَلَى اللَّهِ، وَلاَ حَوْلَ وَلاَ قُـوَّةَ إِلاَّ بِاللَّهِ.</h2>
+                        <h3> Allah ke naam se my allah pe bharosa karta hu aur allah ke siwa koi taqat aur taqateen nai hai</h3>
+                        <h4>Bismil-lah, tawakkaltu AAalal-lah, wala hawla wala quwwata illa billah.</h4>
+                        <h3> In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లాహ్ పేరిట, నేను అల్లాపై నా విశ్వాసాన్ని ఉంచుతాను మరియు అల్లాతో తప్ప శక్తి లేదా శక్తి లేదు</h3>
+                
+                </div>
+
+                <div class="dua">
+                    
+                    <h6>20 </h6> <br> <h1> [when it rains] <br>
+                        [వర్షం పడినప్పుడు]
+                        </h1>
+                      <h2> اللَّهُمَّ صَيِّبًا نَافِعًا  </h2>
+                      <h3>Ya Allah isey nafa bakhish barish bana</h3>
+                      <h4>Allahummaj-'alhu soyyiban naafi’an</h4>
+                      <h3>O Allah, make it a beneficial rain.</h3>
+                      <h5>అల్లాహుమ్మజ్-అల్హు సోయ్యిబాన్ నాఫియాన్</h5>
+                      <h3>ఓ అల్లాహ్, ప్రయోజనకరమైన వర్షం కురిపించండి</h3>
+                    
+                    </div>
+
+                
+
+                <div class="dua">
+                    <h6>20 </h6> <br> <h1>[Takbeer] <br>
+                    
+                        [write in telugu]</h1>
+                        <h2>الله أكبر</h2>
+                        <h3> Allah sabse bada hai</h3>
+                        <h4>Allahu Akbar</h4>
+                        <h3>Allah is the Greatest</h3>
+                        <h5>telugu</h5>
+                        <h3>అల్లాహ్ గొప్పవాడు</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>21 </h6> <br> <h1> [Sana] <br>
+                        [సనా]
+                        </h1>
+                        <h2>سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ</h2>
+                               وَلاَ إِلَهَ غَيْرُكَ
+                        <h3>Ya Allah! Main Teri Paki Bayan Karta Hun Aur Teri Hamd (Taareef) Wa Sana Bayan Karta Hun
+                               Aur Tera Naam Barkat Wala Hai, Buland Hai Teri Shaan, Aur Nahi Hai Maabood Tere Siva Koi</h3>
+                        <h4>Subhanaka Allahumma wa bihamdika wa tabarakasmuka, wa ta’ala jadduka wa la ilaha ghairuk</h4>
+                        <h3>‘Glorious You are O Allah, and with Your praise, and blessed is Your Name, and exalted is Your majesty, and none has the right to be worshipped but You</h3>
+                        <h5>telugu</h5>
+                        <h3>‘నీవు మహిమాన్వితుడవు ఓ అల్లా, నీ స్తుతితో నీ నామం ధన్యమైనది, నీ మహిమ శ్రేష్ఠమైనది, నిన్ను తప్ప పూజించే హక్కు ఎవరికీ లేదు.</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>22 </h6> <br> <h1>[Ta`awwuz] <br>
+                        [తావుజ్]</h1>
+                        <h2>اَعُوْذُ  بِااللّٰهِ  مِنَ الشَّیْطٰنِ الرَّجِیْمِ </h2>
+                        <h3>Panaah mangta hu my allah ke shaitaan martoot se</h3>
+                        <h4>A'oodhu  Billaahi  Min  Ashshaitaanir  Rajeem</h4>
+                        <h3> I seek refuge with Allah from the accursed devil(shaytaan)</h3>
+                        <h5>అ'ఊదు బిల్లాహి మిన్ అశ్షైతానిర్ రాజీమ్</h5>
+                        <h3>శాపగ్రస్తుడైన దెయ్యం (షైతాన్) నుండి నేను అల్లాహ్‌ను ఆశ్రయిస్తున్నాను</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>23 </h6> <br> <h1> [Tasmiyah] <br>
+                        [తస్మియః]
+                        </h1>
+                        <h2> بِسْمِ اللهِ  الرَّحْـمٰنِ   الرَّحِیْمِ </h2>
+                        <h3> Shuru Allah ke naam se jo bada meharbaan aur nehayat reham wala hai</h3>
+                        <h4>Bismillaahir  Rahmaanir   Raheem</h4>
+                        <h3>In the name of Allah the most gracious most merciful</h3>
+                        <h5>బిస్మిల్లాహిర్ రహ్మానిర్ రహీం</h5>
+                        <h3>అత్యంత దయగల అల్లాహ్ పేరిట</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>24 </h6> <br> <h1> [Tasbeeh in Ruku] <br>
+                        [రుకూలో తస్బీహ్]
+                        </h1>
+                        <h2> سُبْحٰنَ   رَبِّـیَ   الْعَظِیْمِ</h2>
+                        <h3> Mera Allah Paak hai , Bahot Azmath wala hai</h3>
+                        <h4>Subhaana  Rabbiyal  Azeem</h4>
+                        <h3>Glory be to my Allah , the Magnificient</h3>
+                        <h5>సుభానా రబ్బియల్ అజీమ్</h5>
+                        <h3>నా అల్లా పాక్, అతను చాలా ధన్యుడు</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>25 </h6> <br> <h1> [Tasmee] <br>
+                        [తస్మీ]</h1>
+                        <h2>  سَـمِعَ   اللّٰه  لِ   مَنْ  حَـمِدَہٗ</h2>
+                        <h3>Allah sunta hai jo uski tareef karta hai</h3>
+                        <h4>Samia'  Allah  Li  Man  Hamidahu</h4>
+                        <h3>Allah listens the one who praises him</h3>
+                        <h5>సమియా 'అల్లా లి మన్ హమిదహు</h5>
+                        <h3>తనను స్తుతించేవారిని అల్లా వింటాడు</h3>
+                
+                </div>
+
+               
+
+                <div class="dua">
+                    <h6>26 </h6> <br> <h1> [Tasbeeh in Sajdah] <br>
+                        [సజ్దాలో తస్బీహ్]
+                        </h1>
+                        <h2>  سُبْحٰنَ رَبِّـیَ   الْاَعْلٰی   </h2>
+                        <h3>Mera allah paak hai jo sab se buland hai</h3>
+                        <h4>Subhaana  Rabbiyal A'la </h4>
+                        <h3> Glory be to my allah, the exalted</h3>
+                        <h5>telugu</h5>
+                        <h3>మహోన్నతుడైన నా అల్లాహ్ కు మహిమ</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>27</h6> <br> <h1> [Tasha`had] <br>
+                        [తాషా హద్]
+                        </h1>
+                        <h2>التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا</h2>
+                            النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ
+                            اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ
+                             مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+                        
+                        <h3>SAbhi khowlibadani,maal allah ke liye hai,Salamati ho ya nabi aap per aur allah ke rehmate aur iske barkate ho,salam ho hum per aur allah ke nek bando per, my gawahi deta hu ki allah ke siwa koi mahboob naihai aur my gawahi deta hu ki mohammad uske bande uske rasool hai</h3>
+                        <h4>At-tahiyyatu Lillahi wa-salawatu wa’t-tayyibat, as-salamu ‘alayka ayyuha’n-Nabiyyu wa rahmat-Allahi wa barakatuhu. As-salamu ‘alayna wa ‘alaa ‘ibad-Illah is-saliheen. ashhadu alla ilaha illallah wa ashhadu anna muhammadan ‘abduhu wa rasuluhu</h4>
+                        <h3>“All the best compliments and the prayers and the good things are for Allah. Peace and Allah’s Mercy and Blessings be on you, O Prophet! Peace be on us and on the pious slaves of Allah, I testify that none has the right to be worshipped but Allah, and I also testify that Muhammad is Allah’s slave and His Apostle.”</h3>
+                        <h5>అత్-తహియ్యతు లిల్లాహి వ-సలావతు వ'త్-తయ్యిబాత్, అస్-సలాము 'అలైకా అయ్యుహా'న్-నబియ్యు వా రహ్మత్-అల్లాహి వ బరకాతుహు. అస్-సలాము 'అలయినా వా 'అలా' ఇబాద్-ఇల్లాహ్ ఇస్-సాలిహీన్. అష్హదు అల్లా ఇలాహ ఇల్లల్లాహ్ వ అష్హదు అన్న ముహమ్మదన్ ‘అబ్దుహు వ రసూలుహు</h5>
+                        <h3>“అన్ని మంచి అభినందనలు మరియు ప్రార్థనలు మరియు మంచి విషయాలు అల్లాకు ఉన్నాయి. శాంతి మరియు అల్లా యొక్క దయ మరియు ఆశీర్వాదాలు, ఓ ప్రవక్తా! మాపై మరియు అల్లాహ్ యొక్క పవిత్రమైన దాసులపై శాంతి కలుగుగాక, అల్లాహ్ తప్ప మరెవరికీ ఆరాధించబడే హక్కు లేదని నేను సాక్ష్యమిస్తున్నాను మరియు ముహమ్మద్ అల్లాహ్ యొక్క బానిస మరియు అతని అపొస్తలుడని కూడా నేను సాక్ష్యమిస్తున్నాను.</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>28 </h6> <br> <h1> [Darood-e-Ibrahim] <br>
+                        [దరూద్-ఎ-ఇబ్రహీం]
+                        </h1>
+                        <h2>اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا</h2>
+                            صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ
+                            حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكَ عَلَى مُحَمَّدٍ وَعَلَى آلِ
+                            مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ 
+                            إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ
+                        <h3>Ya Allah rehmat nazil farma Mohammad(SAW)per aur mohammad (SAW)ke aal per,jise ki tune rehmat nazil farmai ibrahim aali salam per aur ibrahim aalai salam ki aal per,beshaq tu bada tareef wala buzurgi wala hai,a allah barkat nazil farma mohammad(SAW) per aur Mohammad(SAW)aal per jisa ki tu ne barkat nazil farmai ibrahim aalai salam per aur ibrahim aalai salam ki aal per,beshaq tu bada he tareef wala buzurgi wala hai </h3>
+                        <h4>Allaahumma salli 'alaa Muhammadin wa 'alaa 'aali Muhammadin, kamaa sallayta 'alaa 'Ibraaheema wa 'alaa 'aali 'Ibraaheema, 'innaka Hameedun Majeed. Allaahumma baarik 'alaa Muhammadin wa 'alaa 'aali Muhammadin, kamaa baarakta 'alaa 'Ibraaheema wa 'alaa 'aali 'Ibraaheema, 'innaka Hameedun Majeed</h4>
+                        <h3> O Allah, bestow Your favor on Muhammad and on the family of Muhammad as You have bestowed Your favor on Ibrahim and on the family of Ibrahim, You are Praiseworthy, Most Glorious. O Allah, bless Muhammad and the family of Muhammad as You have blessed Ibrahim and the family of Ibrahim, You are Praiseworthy, Most Glorious.</h3>
+                        <h5>అల్లాహుమ్మ సల్లి 'అలా ముహమ్మదిన్ వ' అలా 'ఆలీ ముహమ్మదిన్, కమా సల్లయితా 'అలా 'ఇబ్రాహీమా వ' అలా' ఆలీ 'ఇబ్రాహీమా, 'ఇన్నాకా హమీదున్ మజీద్. అల్లాహుమ్మ బారిక్ 'అలా ముహమ్మదిన్ వ' అలా 'ఆలీ ముహమ్మదిన్, కమా బారక్త' అలా 'ఇబ్రాహీమా వ' అలా' ఆలీ 'ఇబ్రాహీమా, 'ఇన్నాకా హమీదున్ మజీద్</h5>
+                        <h3>ఓ అల్లాహ్, ఇబ్రహీం మరియు ఇబ్రహీం కుటుంబంపై నీ అనుగ్రహం పొందినట్లే ముహమ్మద్ పై మరియు ముహమ్మద్ కుటుంబంపై నీ అనుగ్రహాన్ని ప్రసాదించు, నీవు స్తుతింపదగినవాడివి, అత్యంత మహిమాన్వితుడు. ఓ అల్లాహ్, మీరు ఇబ్రహీం మరియు ఇబ్రహీం కుటుంబాన్ని ఆశీర్వదించినట్లుగా ముహమ్మద్ మరియు ముహమ్మద్ కుటుంబాన్ని ఆశీర్వదించండి, మీరు స్తుతింపదగినవారు, అత్యంత మహిమాన్వితమైనవారు</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6>29 </h6> <br> <h1> [Dua after Darood-e-Ibrahim] <br>
+                        []
+                        []</h1>
+                        <h2>arabic</h2>
+                        <h3> urdu meaning</h3>
+                        <h4>english</h4>
+                        <h3> english meaning</h3>
+                        <h5>telugu</h5>
+                        <h3>telugu meaning</h3>
+                
+                </div>
+
+                
+            
+            
+            </div>
+        
+    
+</body>
+</html>
