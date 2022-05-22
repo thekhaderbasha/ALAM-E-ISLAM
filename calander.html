@@ -50,10 +50,122 @@ justify-content:space-around;
 
 }
 
-.can{
-    height: 10rem;
-    width: 15rem;
+.box1{
+    background-color: blueviolet;
+    width: 250px; height: 312px;
+    margin-top: 3rem;
+    box-sizing: border-box;
+  
+
 }
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.box2{
+    background-color: blueviolet;
+    height: 12rem;
+    width: 15rem;
+    margin-top: -4rem;
+}
+h3{
+    text-align: center;
+}
+
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 600px){
+
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+
+.name{
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+}
+
+
+.cal{
+display: flex;
+text-align: center;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content:space-around;
+
+
+
+}
+
+.box1{
+    background-color: blueviolet;
+    width: 250px; height: 312px;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.box2{
+    background-color: blueviolet;
+    height: auto;
+    width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
     </style>
@@ -65,17 +177,37 @@ justify-content:space-around;
         <div class="name">ALAM-E-ISLAM</div>
 
     </div>
-<div class="cal">
-    <div class="one">
-        <h1> Gregorian/Hijri calendar </h1>
-        <iframe id="g2hFrame" title="islamic-calendar" style="width: 250px; height: 312px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/islamic-calendar/widgetGregorian?type=Gregorian"> </iframe>
+
+    <div class="container">
+
+<div class="box1"><iframe id="g2hFrame"
+     title="islamic-calendar" style="width: 250px; height: 312px; border: 4px solid rgb(255, 255, 255); border-bottom: 15px rgb(255, 255, 255) solid;" scrolling="no" src="https://www.islamicfinder.org/islamic-calendar/widgetGregorian?type=Gregorian">
+ </iframe>
+  <h3>Gregorian/Hijri</h3>
+</div>
+
+<div class="box2"><iframe style="width: 240px; height: 420px; border: 1px solid rgb(255, 255, 255); border-bottom: 10px solid white; " scrolling="no" src="https://www.islamicfinder.org/specialislamicdays">
+
+</iframe>
+ <h3>Special Islamic Days</h3>
+
+
+</div>
+
+<div class="box1"><iframe id="h2gFrame" title="islamic-calendar" style="width: 250px; height: 312px; border: 4px solid rgb(255, 255, 255); border-bottom: 27px rgb(255, 255, 255) solid; "scrolling="no" src="https://www.islamicfinder.org/islamic-calendar/widgetGregorian?type=Hijri"> 
+</iframe>
+
+<h3>
+    Hijri/Gregorian calendar
+</h3>
+</div>
+
+
     </div>
    
    
 
-<div><iframe id="iframe" title="prayerWidget" class="widget-m-top" style=" height: 312px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/1269843/shafi/3/0/18.0/18.0"> </iframe></div>
 
-<div><iframe style="width: 440px; height: 460px; border: 1px solid black;" scrolling="no" src="https://www.islamicfinder.org/specialislamicdays"> </iframe></div>
 </div>
 </body>
 </html>
