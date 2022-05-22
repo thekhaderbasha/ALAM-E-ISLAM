@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* ------------------------------------------------stylesheet-------------------------------------------------------------- */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+
+.name{
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+}
+
+
+.cal{
+display: flex;
+text-align: center;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content:space-around;
+
+
+
+}
+
+.can{
+    height: 10rem;
+    width: 15rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logod"><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+
+    </div>
+<div class="cal">
+    <div class="one">
+        <h1> Gregorian/Hijri calendar </h1>
+        <iframe id="g2hFrame" title="islamic-calendar" style="width: 250px; height: 312px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/islamic-calendar/widgetGregorian?type=Gregorian"> </iframe>
+    </div>
+   
+   
+
+<div><iframe id="iframe" title="prayerWidget" class="widget-m-top" style=" height: 312px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/1269843/shafi/3/0/18.0/18.0"> </iframe></div>
+
+<div><iframe style="width: 440px; height: 460px; border: 1px solid black;" scrolling="no" src="https://www.islamicfinder.org/specialislamicdays"> </iframe></div>
+</div>
+</body>
+</html>

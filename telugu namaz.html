@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* ------------------------------------------------stylesheet-------------------------------------------------------------- */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+
+.name{
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 2rem  ;
+    
+
+}
+
+
+body{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.box{
+    height: auto;
+    margin: 2rem;
+    text-align: center;
+}
+
+p{
+    text-align:left;
+    margin: 2rem;
+    text-overflow: clip;
+}
+
+h3{
+    margin: 1rem;
+    text-align: center;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+    text-decoration: underline solid;
+}
+
+h2{
+    text-align: left;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: underline 1px;
+}
+
+.data{
+    width: 35rem;
+    height: auto;
+}
+
+.img{
+    height: 26rem;
+    width: 30rem;
+}
+
+.img2{
+    height: 27rem;
+    width: 30rem;
+}
+
+.img3{
+
+    height: 32rem;
+    width: auto;
+    
+}
+
+.img4{
+
+   height: 32rem;
+    width: auto;
+}
+
+.box_data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0.5rem;
+}
+
+#dua{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.pic{
+ width: 30rem;
+ height: auto;
+}
+/* ------------------------------------------responsive------------------------------------------- */
+@media screen and (max-width: 800px){
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+
+
+
+.name{
+    line-height: 4.5rem;
+    font-size: 2rem;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem  ;
+    
+
+}
+
+
+body{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.box{
+    height: auto;
+    margin: 2rem;
+    text-align: center;
+}
+
+p{
+    text-align:justify;
+    margin: 2rem;
+    text-overflow: clip;
+    font-family: 'Nunito', sans-serif;
+}
+
+h3{
+    margin: 1rem;
+    text-align: center;
+    text-decoration: underline 1px gray;
+}
+
+.heading{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-decoration: underline solid 1px;
+    text-transform: capitalize;
+}
+
+h2{
+    text-align: left;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: underline 1px;
+}
+
+.data{
+    width: 35rem;
+    height: auto;
+}
+
+.img{
+    height: 18rem;
+    width: 22rem;
+}
+
+.img2{
+    height: 22rem;
+    width: 23rem;
+}
+
+.img3{
+
+    height: 25rem;
+    width: 23rem;
+    
+}
+
+.img4{
+
+   height: 23rem;
+    width: 25rem;
+}
+
+.box_data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0.5rem;
+}
+
+#dua{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.pic{
+ width: 30rem;
+ height: auto;
+}
+
+a{
+    text-decoration: none;
+    border: 1px gray solid;
+    margin: 1rem 2rem;
+    background-color: rgb(0, 0,0,0.1);
+    color: black;
+    text-align: right;
+}
+
+a:hover{
+   
+    background-color:white;
+    color: gray;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logod"><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+
+    </div>
+    <div class="title">namza ( నమాజ్ ) </div>
+
+    <div class="heading">నమాజ్ చేసే ముందు</div>
+
+
+    <div><h3>step 1</h3></div>
+   
+<div class="box">
+
+<p>ప్రాంతం శుభ్రంగా మరియు మలినాలు లేకుండా ఉండేలా చూసుకోండి.  మీ శరీరం, మీ బట్టలు మరియు ప్రార్థన స్థలం కూడా శుభ్రంగా ఉండేలా చూసుకోండి.</p>
+
+
+
+
+</div>
+<hr>
+
+<div><h3>step 2</h3></div>
+   
+<div class="box">
+
+    <p> నమాజ్ ముందు వుజు చేసుకోండి. మీరు నమాజ్ ప్రారంభించడానికి ముందు మీరు తప్పనిసరిగా పవిత్రంగా ఉండాలి.</p>
+
+</div>
+
+<p> <a href="wuzu.html">వుజూ చేసే పద్ధతి </a>  </p>
+<hr>
+
+<div><h3>step 3</h3></div>
+<div class="box">
+   
+       <p>ఖిబ్లాను వైపు ముఖం చెయ్యండి.  మక్కాలోని పవిత్ర మసీదు ప్రపంచవ్యాప్తంగా ఉన్న ముస్లింలకు అత్యంత గౌరవనీయమైన ప్రార్థనా స్థలం. ముస్లింలందరూ తమ ప్రార్థనలు చేసేటప్పుడు ప్రతిరోజూ ఐదుసార్లు కాబాను వైపు ముఖం చేసి ప్రార్థనలు చేస్తారు.</p>
+    
+    
+    </div>
+    <hr>
+
+    <div><h3>step 4</h3></div>
+<div class="box">
+   
+    
+        <p>సరైన సమయంలో ప్రార్థించండి. ప్రతి రోజు ఐదు ప్రార్థనలు చాలా నిర్దిష్ట సమయాల్లో జరుగుతాయి.[6] ప్రతి ఒక్కదానికి, సూర్యుడు ఉదయించడం మరియు పడటం ద్వారా నిర్ణయించబడే కొద్ది సమయం ఉంటుంది. ప్రతి నమాజ్ ప్రారంభం నుండి ముగిసే వరకు 5 నుండి 10 నిమిషాలు పడుతుంది, కానీ ఎప్పుడూ తొందరపడకూడదు.</p>
+    
+    
+    </div>
+
+
+    <p><a href="">నమాజ్ సమయం</a></p>
+    <hr>
+
+    <div><h3>step 5</h3></div>
+    <div class="box">
+       
+        
+            <p>
+                నమాజ్ ముందు  మిమ్మల్ని మీరు కప్పుకోండి. పురుషులు మరియు మహిళలు ఇద్దరూ ప్రార్థన సమయంలో చర్మాన్ని  కప్పుకోవాలి. స్త్రీలు తమ ముఖాలు మరియు చేతులను మినహాయించి అన్నింటినీ కప్పి ఉంచాలి, పురుషులు వారి నాభి మరియు మోకాళ్ల మధ్య ప్రాంతాన్ని కప్పి ఉంచాలి.</p>
+         
+        
+        </div>
+    
+        <hr>
+    
+<div class="heading">నమాజ్ చేసే పద్ధతి</div>
+
+
+<div><h3>Step 1 </h3></div>
+<div class="box">
+    <h2>Make your intention to pray</h2>
+    
+    
+    
+    <h2>నమాజ్ చేయాలనే నియ్యత్ చేయండి</h2>
+        <p>
+
+            అల్లాను ప్రార్థించాలనే ఉద్దేశ్యంతో మేము మొదట ప్రార్థన ప్రారంభించాము. మీరు ప్రారంభించిన వెంటనే, మీ దృష్టి అంతా ప్రార్థనపైనే ఉండాలి మరియు మరేమీ కాదు. 
+            
+        </p>
+<p>
+
+    (జిటినీ రకాత్ ఆప్ పాడ్ రహే హాయ్ అట్నే రకాత్ బాల్కె 2,3,4) రకాత్ (జిస్ వక్త్ కి నమాజ్ ఆప్ పాడ్ రహే హాయ్ ) నమాజ్  కి
+అదా కర్తా/కార్తీ హూన్, అల్లాహ్ కే వాస్తాయ్ ముహ్ మేరా కాబా షరీఫ్ కి తారాఫ్
+</p>
+
+    <h2>Pehlay niyyat karien  </h2>
+         
+    </div>
+
+
+    
+    <hr>
+
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        <div ><img src="images/namaz1.png" alt="" class="img"></div>
+        <div class="data">
+    
+    
+    
+    
+        <p>
+             అల్లాహు అక్బర్ అంటూ రెండు చేతులను చెవుల వరకు ఎత్తాలి.
+        </p>    
+    
+    
+    
+</div>
+    </div>
+    <hr>
+    
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        
+        <div class="data">
+            
+        <p>
+            1.  ఎడమ చేతిపై కుడి చెయ్యివేసి బొడ్డు క్రింద ఉంచి రకాతు కట్టాలి.     
+             </p>    
+      <p>
+         2. మీ కళ్ళను మీ ముందు ఉన్న నేలపై కేంద్రీకరించండి. <br>
+         
+  ప్రవక్త ముహమ్మద్ (సల్లల్లాహు అలైహి వసల్లం) మీరు ప్రార్థన చేస్తున్నప్పుడు మీ కళ్ళు ఎల్లప్పుడూ మీరు ఎక్కడ సాష్టాంగం (సజ్దా) చేస్తారో చూడాలి అని చెప్పారు.
+      </p>
+  
+      <p>
+        3.  ఇది తప్పనిసరి కానప్పటికీ, అల్లాహు అక్బర్ చెప్పిన తర్వాత కింది దువా (ప్రార్థన) చదవడం కూడా బాగా సిఫార్సు చేయబడింది:</p>
+      
+      <p>
+          <h2>సనా:</h2>
+          <p id="dua">
+             " సుబహానకల్లాహుమ్మ వబిహందిక  <br>
+             వతబరాకస్-ముక వతఆల జద్దుక <br>
+             వలా ఇలాహగైరుకో 
+          
+          </p>
+          
+          <p>
+             
+          <b>అర్థం : </b>
+          ఓ అల్లాహ్, మీరు ఎంత పరిపూర్ణంగా ఉన్నారు. నేను నిన్ను స్తుతిస్తున్నాను
+                  నీ నామము ఎంత ధన్యమైనది
+                  నీ స్థానం ఎంత ఉన్నతమైనది
+                  మరియు ఆరాధించబడే హక్కు నీకు తప్ప మరెవరికీ లేదు
+          
+      </p>
+              
+      <div><h3>step 3</h3></div>
+     
+     
+           
+         
+      <p>
+          
+   ఖురాన్ ప్రారంభ సురా చదవండి  ( సూరహ్ అల్- ఫాతిహా ).
+          </p>    
+      
+          <p id="dua">బిస్మిల్లాహ్ హిర్రహ్మ నిర్రహీమ్ <br> <br>
+              అల్ హందు లిల్లాహి రబ్బిల్ ఆలమీన్, <br>
+              అర్రహ్మానిర్రహీం. <br>
+              మాలికి యౌమిద్దీన్. <br>
+              ఇయ్యాక నాబుదు వ ఇయ్యాక నస్తయిన్. <br>
+              ఇహినస్సిరాతల్ ముస్తఖీమ్. <br>
+              సిరాతల్లజీన అన్అమ్త అలైహిమ్. <br>
+              గైరిల్ మగూబి అలైహిమ్ వలజ్జ్వాలీన్. <br>
+  
+          </p>
+      <p>
+          సూరా ఫాతిహా చదివిన తర్వాత, మీరు ఖురాన్ నుండి మరొక సూరా చదవాలి సూరా ఇఖ్లాస్ మరియు మొదలైనవి. అయితే, మీరు ప్రార్థన యొక్క ప్రతి రకాత్‌లో కనీసం సూరా ఫాతిహాను తప్పక చదవాలి.
+      </p>    
+
+</div>
+
+<div class="pic">
+    <img src="images/namaz2.png" alt="" class="img2">
+</div>
+    </div>
+
+
+
+
+
+    
+    
+
+
+
+
+    <hr>
+
+
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        <div ><img src="images/namaz3.png" alt="" class="img3"></div>
+        <div class="data">
+    
+            <h3> రుకు చెయ్యాలి</h3>
+            <p>మీరు రుకు చెస్తున్నప్పుడు 'అల్లాహు అక్బర్' అని చెప్పండి. మీ వీపును నిటారుగా ఉండేలా చూసుకోండి, మీ చేతులను మోకాళ్లపై ఉంచి,  నేలపై మీ కళ్ళు కేంద్రీకరించండి.</p>
+    
+            <p>మీరు ఈ స్థితిలో ఉన్నప్పుడు మీరు ఈ వాక్యాన్ని మూడుసార్లు చదవాలి:</p>
+            <p id="dua">"సుబహాన రబ్బియల్ అదిమ్"</p>
+            <p><b>meaning:</b>'మహిమాన్వితమైన నా అల్లా అత్యంత గొప్పవాడు.’</p>
+    
+    
+   
+</div>
+    </div>
+
+<hr>
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        
+        <div class="data">
+    
+    
+    
+    
+        <p>
+             అల్లాహు అక్బర్ అంటూ రెండు చేతులను చెవుల వరకు ఎత్తాలి.
+        </p>    
+    
+    
+   
+</div>
+<div ><img src="images/namaz4.png" alt="" class="img4"></div>
+    </div>
+    <hr>
+
+   
+
+
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        <div ><img src="images/namaz5.png" alt="" class="img3"></div>
+        <div class="data">
+    
+    
+    
+    
+        <p>
+             అల్లాహు అక్బర్ అంటూ రెండు చేతులను చెవుల వరకు ఎత్తాలి.
+        </p>    
+    
+    
+    
+</div>
+    </div>
+
+    <hr>
+    <div><h3>step 2</h3></div>
+   
+    <div class="box_data">
+        
+        <div class="data">
+    
+    
+    
+    
+        <p>
+             అల్లాహు అక్బర్ అంటూ రెండు చేతులను చెవుల వరకు ఎత్తాలి.
+        </p>    
+    
+    
+    
+</div>
+<div ><img src="images/namaz6.png" alt="" class="img4"></div>
+    </div>
+
+    </div>
+</body>
+</html>

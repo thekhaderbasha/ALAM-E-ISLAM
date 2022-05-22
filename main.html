@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- ----------------------------------------style sheet---------------------------------------------------- -->
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+ 
+}
+
+
+.nav {
+background-color: gray;
+    height: 5.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+
+.name{
+    line-height: 5.5rem;
+    font-size: 2.5rem;
+}
+
+
+.second_d{
+    height:auto;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    font-size: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+justify-content: space-between;
+}
+
+.container{
+    height: 10rem;
+    width: 10rem;
+    /* background-image: linear-gradient(to bottom,#B75800 , black); */
+    background-color: white ;
+    position:relative;
+    margin: 3rem 3rem;
+    margin-top: 40px;
+    
+    border-radius: 1rem;
+    box-shadow: 1px 10px 10px black;
+}
+
+.overlay{
+    height: 10rem;
+    width: 10rem;
+position: absolute;
+top: 0;
+left: 0;
+font-size: 10px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+opacity: 0;
+background:rgb(255, 255, 255);
+transition: opacity 0.4s;
+border-radius: 1rem;
+}
+
+.content{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+  
+}
+
+.img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+
+}
+
+
+
+
+
+
+.sub{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: gray;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+}
+
+.mail{
+    height: 2.2rem;
+    width: 2.3rem;
+    margin: 0rem 5rem;
+    padding-top: 1rem;
+}
+.insta{
+    height: 2.2rem;
+    width: 2rem;
+    margin: 0rem 5rem;
+    padding-top: 1rem;
+}
+
+.fb{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0rem 5rem;
+    padding-top: 1rem;
+}
+
+
+
+h3{
+    font-size: 2rem;
+    text-transform:uppercase ;
+
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    text-transform: capitalize;
+}
+
+body::-webkit-scrollbar {
+    display: none ;
+}
+
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 3.5rem;
+
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+
+.logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+footer{
+    background-color: gray;
+    height: 3rem;
+position: sticky;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+}
+
+.icon{
+    height: 2rem;
+    width: 2rem;
+    margin: 0rem 2rem;
+    padding-top: 1rem;
+}
+
+
+
+.name{
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+
+}
+
+.second_d{
+    margin-top: 1rem;
+    height:auto ;
+    
+    /* background-color: rgba(0, 0, 0, 0.1); */
+
+    text-align: center;
+
+    font-size: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+justify-content: space-around;
+}
+
+
+.container{
+    height: 12rem;
+    width: 12rem;
+    /* background-image: linear-gradient(to bottom,#B75800 , black); */
+    background-color: white ;
+    position:relative;
+    margin: 3rem 3rem;
+    margin-top: 40px;
+    
+    border-radius: 1rem;
+    box-shadow: 1px 10px 10px black;
+}
+
+.overlay{
+    height: 12rem;
+    width: 12rem;
+position: absolute;
+top: 0;
+left: 0;
+font-size: 10px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+opacity: 0;
+background:grrgb(255, 255, 255);
+transition: opacity 0.4s;
+border-radius: 1rem;
+}
+
+.content{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+  
+}
+
+.img{
+    height: 12rem;
+    width: 12rem;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logod"><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+
+    </div>
+    
+<div class="second_d">
+  
+
+    <a href="wuzu.html"> <div class="container">
+        <img src="images/wuzu.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>wuzu</h3>
+                <p>how to wuzu</p>
+            </div>
+        </div>
+        <div class="sub">wuzu</div>
+    </div></a>
+    <a href="namazz.html">
+    <div class="container">
+        <img src="images/namaz111.png"  alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>namaz</h3>
+                <p>how to perform</p>
+            </div>
+        </div>
+        <div class="sub">namaz</div>
+    </div></a>
+
+    
+   <a href="namaz timings.html"> <div class="container">
+        <img src="images/rakat1.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+               <h3>namaz</h3>
+                <p>timings and rakats</p>
+            </div>
+        </div>
+        <div class="sub">namaz rakat and timings</div>
+    </div></a>
+
+    <a href="surahs.html">
+    <div class="container">
+        <img src="images/surahs1.png"   alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>surah</h3>
+                <p>with meaning</p>
+            </div>
+        </div>
+        <div class="sub">surah</div>
+    </div></a>
+
+    <a href="additnal namaz.html"><div class="container">
+        <img src="images/adnamaz.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h2>additinal <br> namaz </h2>
+                <p>how to perform</p>
+            </div>
+        </div>
+        <div class="sub">additnal namaz</div>
+    </div></a>
+
+
+<a href="allah names.html"> <div class="container">
+        <img src="images/99.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>99 </h3>
+                <p>names of allah</p>
+            </div>
+        </div>
+        <div class="sub">names of allah</div>
+    </div></a>
+
+   <a href=""> <div class="container">
+        <img src="images/duas.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>dua</h3>
+                <p>different duas and imps</p>
+            </div>
+        </div>
+        <div class="sub">dua's</div>
+    </div></a>
+
+  
+   <a href="yasin.html"> <div class="container">
+        <img src="images/yaseen.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>yaseen</h3>
+                <p>english urdu telugu</p>
+            </div>
+        </div>
+        <div class="sub">yaseen</div>
+    </div></a>
+
+    
+    <a href="kalme.html"><div class="container">
+        <img src="images/kalima.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>kalima</h3>
+                <p>all kalimas with meanings</p>
+            </div>
+        </div>
+        <div class="sub">kalima</div>
+    </div></a>
+
+    
+    <a href=""><div class="container">
+        <img src="images/sunnat.png" alt="" class="img">
+        <div class="overlay">
+            <div class="content">
+                <h3>sunnats</h3>
+                <p>prophet mohammad s.a.w sunnats</p>
+            </div>
+        </div>
+        <div class="sub">sunnat</div>
+    </div></a>
+       
+        </div>
+    </div>
+    
+    <footer>
+    <img src="images/mail.png" alt="" class="mail"> 
+    <img src="images/insta.png" alt="" class="insta">
+    <img src="images/fb.png" alt="" class="fb">
+
+
+    </footer>
+    
+    
+</div>
+</body>
+</html>

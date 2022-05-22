@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surah al-fateha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap" rel="stylesheet">
+
+     <!-- -------------------------------------------style-------------------------------------------------- -->
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: rgba(0, 0, 0, 0.1);
+        /* font-family: 'Padauk', sans-serif; */
+
+    }
+    
+    .nav {
+        background-color: rgb(187, 187, 187);
+        height: 4.5rem;
+       position: sticky;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        
+    }
+    .logo{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    
+    
+    
+    .name{
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+    }
+
+    .main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-top: 1rem;
+
+    }
+
+    .dua{
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        text-align: center;
+        border: 4px solid gray;
+    }
+
+h6{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10rem;
+
+}
+
+h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+        line-height: 3rem;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-top:-4.5rem; 
+    margin-bottom:-2rem;
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    background-color: rgba(0, 225, 255, 0.349);
+    text-align: center;
+    
+}
+
+h3{
+    font-size: 1rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem 4rem;
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+    line-height: 2rem;
+    font-family: 'Padauk', sans-serif;
+}
+
+h5{
+    font-size: 1.2rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 0, 0.61);
+}
+
+.bismillah{
+    background-color:rgba(255, 255, 255, 0.418) ;
+    font-size: 1.5rem;
+    /* margin-top: 2rem; */
+    padding: 0.7rem;
+
+}
+
+audio{
+    height: 4rem;
+    width:100%;
+    margin-top: 0.5rem;
+    justify-items: center;
+    margin-bottom: -0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+audio::-webkit-media-controls-panel {
+   background-color:rgb(255, 255, 255) ;
+    
+   
+}
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+}
+
+
+
+
+.name{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-top: 1rem;
+
+    }
+
+    .dua{
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        text-align: center;
+        border: 4px solid gray;
+    }
+
+h6{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    color:rgb(0, 0, 0);
+    font-size: 1.6rem;
+    padding-top: 0.2rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10rem;
+    
+
+}
+
+h2{
+    margin-top: rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 0, 0.61);
+        line-height: 3rem;
+    text-align: justify;
+}
+
+h1{
+    font-size: 1.2rem;
+    margin-top:-3rem; 
+    margin-bottom:-2rem;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    background-color: rgba(0, 225, 255, 0.349);
+    text-align: center;
+}
+
+h3{
+    font-size: 1rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    padding: 0rem rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-family: 'Padauk', sans-serif;
+
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize; 
+    font-family: 'Padauk', sans-serif;
+
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 0, 0.61);
+    line-height: 2rem;
+    text-align: justify;
+}
+
+h5{
+    font-size: 1.2rem;
+    margin-top:2rem; 
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-family: 'Padauk', sans-serif;
+
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 0, 0.61);
+    text-align: justify;
+}
+
+.bismillah{
+    background-color:rgba(255, 255, 255, 0.418) ;
+    font-size: 1.5rem;
+    
+    padding: 0.7rem;
+
+}
+
+
+audio{
+    height: 4rem;
+    width:100%;
+    margin-top: 0.5rem;
+    justify-items: center;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+audio::-webkit-media-controls-panel {
+   background-color:rgb(255, 255, 255) ;
+    
+   
+}
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+    </div>
+
+        <div class="main">
+            
+            <div class="dua">
+                <h6>1 </h6>
+                <h1>Kalma-E-taiyyab <br> (కలిమా ఎ  తయ్యబ్)</h1>
+                <audio controls >
+                    <source src="audio/kalima1.mp3" type="audio/ogg">
+                    
+                
+                  </audio>
+                <div class="bismillah">                      بسم الله الرحمن الرحيم </div>
+                      <h2> لآ اِلَهَ اِلّا اللّهُ مُحَمَّدٌ رَسُوُل اللّهِ 
+                     </h2>
+                        <h3> Allah Ke Siwa Koi Mabood Nahi Aur Hazarat Mohammad Sallallahu Alaihi Wasallam Allah Ke Rasool Hai</h3>
+                        <h4>Laa ilaaha illal Lahoo Mohammadur Rasool Ullah </h4>
+                        <h3>  There is no God but Allah Muhammad is the Messenger of Allah</h3>
+                        <h5> లా ఇలాహ ఇల్లల్లాహు ముహమ్మదుర్ రసూలుల్లాహి</h5>
+                        <h3> అల్లాహ్ తప్ప మరెవరు ఆరాధనకు తగిన వారు లేరు. ముహమ్మద్(స) ఆయన ప్రవక్త	</h3>
+                
+                </div>
+
+                <div class="dua">
+                    <h6> 2 </h6>
+                    <h1>   kalma-E-Shahadat <br> (కలిమా ఎ షహాదత్ )</h1>
+                    <audio controls >
+                        <source src="audio/kalima2.mp3" type="audio/ogg">
+                        
+                    
+                      </audio>
+                    <div class="bismillah">                      بسم الله الرحمن الرحيم </div>
+                    <h2>  اَشْهَدُ اَنْ لَّآ اِلٰهَ اِلَّا اللهُ وَحْدَہٗ لَاشَرِيْكَ لَہٗ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهٗ وَرَسُولُہٗ   
+                        </h2>
+                        <h3>  Me Gawahi Deta Hoon Ke Allah Ke Siwa Koi Mabood Nahi, Woh Akela Hai Aur Uska Koi Shareek Nahi Aur Me Gawahi Deta Hoon Ke Hazarat Mohammad Sallallahu Alaihi Wasallam Allah Ke Nek Bande Aur Akhiri Rasool Hai.</h3>
+                        <h4>Ashahado An Laa ilaaha illal Laho Wahdahoo Laa Shareeka Lahoo Wa Ash Hado Anna Mohammadan Abdo Hoo Wa Rasoolohoo.</h4>
+                        <h3>I bear witness that no-one is worthy of worship but Allah, the One alone, without partner, and I bear witness that Muhammad is His servant and Messenger</h3>
+                        <h5>అష్ హదు అల్లా ఇలాహ ఇల్లల్లాహు వహ్ దహు లాషరీక బహు వ అష్ హదు అన్న ముహమ్మదన్ అబ్దుహు వ రసూలుహు. </h5>
+                        <h3>                             అల్లాహ్ తప్ప మరే ఆరాధ్యుడూ లేడని, ఆయన ఒక్కడే అనీ, ఆయనకు ఎవరూ సహవర్తనుడు కాడని నేను సాక్ష్యమిస్తున్నాను. ఇంకా మహమ్మద్ (స) ఆయన దాసుడు, ఆయన సందేశహరుడు అని కూడా నేను సాక్ష్యమిస్తున్నాను.</h3>
+                
+                </div>
+            
+
+                <div class="dua">
+                    <h6>3 </h6>
+                    <h1>kalma-E-Tumjeed <br> ( కలిమా ఎ తమ్జిద్)</h1>
+                    <audio controls >
+                        <source src="audio/kalima3.mp3" type="audio/ogg">
+                        
+                    
+                      </audio>
+                    <div class="bismillah">                      بسم الله الرحمن الرحيم </div>
+                    <h2> سُبْحَان لِلّه وَ الْحَمْدُ   لِلّهِ وَ لآ اِلهَ اِلّا اللّهُ، وَ اللّهُ اَكْبَرُ وَلا حَوْلَ وَلاَ قُوَّة  ِلَّا بِاللّهِ الْعَلِىّ الْعَظِيْم
+                        </h2>
+                        <h3>Allah Ki Zaat Har Aeb Se Paak Hai Aur Tamam Tarifen Allah Hi Ke Liye Hai. Allah Ke Siwa Koi Mabood Nahi Aur Allah Sab Se Bada Hai Aur Kisi Me Na To Taqat Hai Na Bal, Taqat Aur Bal To Allah Hi Me Hai, Jo Bohot Meharban Nihayat Reham Wala Hai.</h3>
+                        <h4>Subhanallahe Wal Hamdulillahe Wa Laa ilaha illal Laho Wallahooakbar. Wala Haola Wala Quwwata illa billahil AliYil Azeem.</h4>
+                        <h3> Glory be to Allah and Praise to Allah, and there is no God But Allah, and Allah is the Greatest. And there is no Might or Power except with Allah.</h3>
+                        <h5>సుబ్ హానల్లాహి వల్ హమ్ దులిల్లాహి వలా ఇలాహ ఇల్లల్లాహు వల్లాహు అక్బర్ . వలా హౌలా వలా కువ్వత ఇల్లా బిల్లాహిల్ అలియ్యిల్ అజీమ్.</h5>
+                        <h3>అల్లాహ్ పరిశుద్ధుడు, సకల స్తోత్రాలు అల్లాహ్ కోరకే. అల్లాహ్ తప్ప మరే ఆరాధ్యుడు లేడు. ఆయన గొప్పవాడు. అల్లాహ్ ద్వారా లభించే ది తప్ప మరే అధికారం కానీ మరే శక్తి కానీ ఏది లేదు. ఆయన మహోన్నతుడు మహో జ్వలుడు</h3>
+                
+                </div>
+            
+
+                <div class="dua">
+                    <h6>4 </h6>
+                    <h1>kalme-E-Thouheed <br> (కలిమా ఎ తౌహిద్)</h1>
+                    <audio controls >
+                        <source src="audio/kalima4.mp3" type="audio/ogg">
+                        
+                    
+                      </audio>
+                    <div class="bismillah">                      بسم الله الرحمن الرحيم </div>
+                    <h2>   لا الهَ اِلَّا اللّهُ وَحْدَهُ لا شَرِيْكَ لَهْ، لَهُ الْمُلْكُ وَ لَهُ الْحَمْدُ
+                            يُحْى وَ يُمِيْتُ وَ هُوَحَىُّ لَّا يَمُوْتُ اَبَدًا اَبَدًا طذُو الْجَلَالِ وَ
+                            الْاِكْرَامِ ط بِيَدِهِ الْخَيْرُ ط وَهُوَ عَلى كُلِّ شَئ ٍ قَدِيْرٌ ط
+                        </h2>
+                        <h3> Allah Ke Siwa Koi Mabood Nahi, Woh Ek Hai Aur Uska Koi Sajhidar Nahi, Sabkuch Usi Ka Hai Aur Sari Taarifen Usi Allah Ke liye Hai. Wahi Zinda Karta Hai Aur Wahi Marta Hai Aur Woh Maut Se Paak Hai. Woh Bade Jalal Aur Buzurgi Wala Hai. Allah Ke Hath Me Har Tarah Ki Bhalai Hai Aur Woh Har Cheez Par Qadir Hai.</h3>
+                        <h4> Laa ilaha illal Lahoo Wahdahoo Laa Shareekalahoo Lahul Mulko Walahul Hamdo Yuhee Wa Yumeeto Wa Hoa Haiy Yul La Yamooto Abadan Abada Zul Jalali Wal ikraam Beyadihil Khair. Wa hoa Ala Kulli Shai In Qadeer.</h4>
+                        <h3> There is) none worthy of worship except Allah. He is only One. (There is) no partners for Him. For Him (is) the Kingdom. And for Him (is) the Praise. He gives life and acuses death. And He (is) Alive. He will not die, never, ever. Possessor of Majesty and Reverence. In His hand (is) the goodness. And He (is) the goodness. And He (is) on everything powerful.</h3>
+                        <h5>లా ఇలాహ ఇల్లల్లాహు వహదహు లా షరీక లహు లహుల్ ముల్కు వ లహుల్ హమ్ దు, యుహ్ యి, వ యుమీతు వహువ హయ్యుల్లా యమూతు అబదన్ ,అబద జుల్ జలాలి వల్ ఇక్రామ్, బియదిల్-ఖైర్, వహువ అలా కుల్లి షయ్యిన్ ఖదీర్.</h5>
+                        <h3>•	అల్లాహ్ తప్పితే వేరొకరు ఆరాధించుటకు అర్హులుగారు. అతనొక్కడే. అతనికి భాగస్వామి ఎవ్వరూ లేరు. సామ్రాజ్యం అతడికే, స్తోత్తములు అతనికే. అతడే జీవనాన్ని మృత్యువునూ నొసంగువాడు. అతడు సజీవి. అతడు చిరంజీవి. అతడే గౌరవాలూ ఔన్నత్యాలూ గల్గినవాడు. మంచి అతడిచేతుల్లోనేవుంది. అతడే మంచి. అతడే సకల శక్తిమంతుడూ.</h3>
+                
+                </div>
+
+
+
+
+                <div class="dua">
+                    <h6>5</h6>
+                    <h1>Kalima-E-Rud-A-Kuffer <br> (కలిమా ఎ రథ్ అ కుఫర్)</h1>
+                    <audio controls >
+                        <source src="audio/kalima5.mp3" type="audio/ogg">
+                        
+                    
+                      </audio>
+                    <div class="bismillah">                      بسم الله الرحمن الرحيم </div>
+                    <h2> اَللّٰهُمَّ اِنِّیْٓ اَعُوْذُ بِكَ مِنْ اَنْ اُشْرِكَ بِكَ شَيْئًا وَّاَنَآ اَعْلَمُ بِهٖ وَ اَسْتَغْفِرُكَ لِمَا لَآ اَعْلَمُ بِهٖ تُبْتُ عَنْهُ وَ تَبَرَّأْتُ مِنَ الْكُفْرِ وَ الشِّرْكِ وَ الْكِذْبِ        
+                            وَ الْغِيْبَةِ وَ الْبِدْعَةِ وَ النَّمِيْمَةِ وَ الْفَوَاحِشِ وَ الْبُهْتَانِ وَ الْمَعَاصِىْ كُلِّهَا وَ اَسْلَمْتُ وَ اَقُوْلُ لَآ اِلٰهَ اِلَّا اللهُ مُحَمَّدٌ رَّسُوْلُ اللهِؕ
+                        </h2>
+                        <h3>Aye Allah Beshaq Mai Teri Panah Mangta Hun Is Se Ke Mai Jante Hue Kisi Cheej Ko Tera Shareeq Banaun Aur Bakhshish Mangta Hun Tujhse Uski Jisko Mai Nahi Janta Aur Maine Us Se Tauba Ki Aur Mai Bezar Hua Kufr Se Aur Shirk Se Aur Jhoot Se Aur bohtan Se Aur Tamam Gunahon Se Aur Islam Laya Mai Aur Imaan Laya Mai Aur Mai Kehta Hun Ki Allah ke Siwa Koi Mabood Nahi Muhammad Sallallahu Alaihi Wasallam Allah Ke Pyaare Rasool Hai</h3>
+                        <h4>Allah Humma inni Aaoozubika Min An Oshrika Beka Shai Aown Wa Anaa Aalamo Behi Wa Astaghfiroka Lima laa Aalamo Behi Tubtu Anho Wa Tabarrato Minal Kufri Washshirki Wal Kizbi Wal Jheebati Wal Bidaati Wan Nameemati Wal Fawahishi Wal Bohtani Wal Maasi Kulliha Wa Aslamtoo Wa Aamantoo Wa Aqoolo Laa ilaaha illal Lahoo Mohammadur Rasool Ullah.</h4>
+                        <h3> O Allah! Certainly I seek protection with You from, that I associate partner with You anything and I know it. And I seek forgiveness from You for that I do not know it. I repended from it and I made myself free from disbelief and polytheism and the falsehood and the back-biting and the innovation and the tell-tales and the bad deeds and the blame and the disobedience, all of them. And I submit and I say (there is) none worthy of worship except Allah, Muhammad is the Messenger of Allah.</h3>
+                        <h5>అల్లాహుమ్మ ఇన్ని ఔజుబిక మిన్ అన్ ఉష్ రిక, బికా షయ్ అన్,వ్వ అనా ఆలము బిహీ వస్తఘఫిరుక లిమా లా ఆలము బిహీ తుబ్ తు అన్ హు వ తబర్రాతు మినల్-కుఫ్రి వష్ షిర్కి వల్ కిజ్ బి, వల్-ఘీబతి వల్-బిద్అతి వన్ నమీమాతి వల్ ఫవాహిషి వల్ బుహ్ తాన వల్ మఆసి కుల్లిహా వ అస్ లమ్ తు వ అఖూలు లా ఇలాహ ఇల్లల్లాహు ముహమ్మదుర్-రసూలుల్-లాహ్.</h5>
+                        <h3>" ఓ అల్లా! నీ శరణుజొచ్చుచున్నాను, నేను స్పృహతో ఉన్నంతవరకూ నీతో ఎవరినీ భాగస్వామిని చేయకూడదని. నాకు తెలియనివాటికి నేను క్షమకోరుచున్నాను. నా అజ్ఞానానికి పశ్చాత్తాపపడుతున్నాను, అవిశ్వాస దాస్యసృంఖనాలనుండి విముక్తి పొందగోరుతున్నాను, నీ భాగస్వామిని ఎవర్నీచేయక, అన్ని పాపములనుండి. నేను నీ ఇక్షకర్పిస్తున్నాను. నేను విశ్వసిస్తున్నాను ,: నీవు తప్ప పూజార్హుడు ఎవ్వరూ లేరని, ముహమ్మదు (శాంతికలుగునుగాక) నీ ప్రవక్తయని</h3>
+                
+                </div>
+            
+            
+            </div>
+        
+    
+
+
+            <!-- https://youtu.be/COH6McIjZlA -->
+</body>
+</html>

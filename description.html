@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    body{
+    background-color: rgb(255, 255, 255);
+    }
+    .nav {
+        background-color: rgb(187, 187, 187);
+        height: 4.5rem;
+    position: relative;
+        display: flex;
+        justify-content: space-around;
+        /* position: sticky; */
+        top: 0;
+        z-index: 1;
+        
+    }
+    .logo{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    
+    
+    
+    .name{
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+    }
+
+
+    .box{
+        height:30rem;
+    width: 75rem;
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+   text-align: center;
+   position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -ms-transform: translate(-50%, -50%);  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+  -o-transform: translate(-50%, -50%); /* Opera */
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: 0px 5px 10px black;
+    
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: scroll;
+    
+    }
+
+
+ h1{
+     color: black;
+ }
+
+ h3{
+     color: aqua;
+ }
+    
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 600px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 4rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+}
+
+
+
+
+.name{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+    
+    body{
+    background-color: rgb(255, 255, 255);
+    }
+
+    .box{
+        height:30rem;
+    width: 20rem;
+    
+    /* display: flex; */
+   text-align: center;
+   position: fixed;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -ms-transform: translate(-50%, -50%);  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+  -o-transform: translate(-50%, -50%); /* Opera */
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: 0px 5px 10px black;
+    
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: scroll;
+    }
+
+
+
+
+
+
+
+}
+    </style>
+<body>
+
+    <div class="nav">
+        <div><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+    </div>
+    <div class="box">
+   <h1>
+    Dummy data is mock data generated at random as a substitute for live data in testing environments. In other words, dummy data acts as a placeholder for live data, the latter of which testers only introduce once it’s determined that the trail program does not have any unintended, negative impact on the underlying data.
+
+    For example, a company implementing a new accounting system uses dummy data to ensure its bookings are stored correctly before inputting live accounts.
+    
+    You can think of dummy data like a car crash dummy — you hope nothing bad happens to it while testing, but if something bad does happen, you can fix the problem with no negative impact on your valuable data assets.
+    
+    Want more?
+    Check out for free the Data Analyst Checklist: 67 core skills & terms every analyst should know:
+    
+    Download free here!
+    Examples of Dummy Data
+    Analysts use dummy data in two primary contexts (we’ll look at a third later): testing new programs and testing modifications on existing program. Let’s look at an example of each below.
+    
+    Testing New Programs
+    Imagine you own a big e-commerce website that sells watches in bulk. Your company is called Batch Watch — it’s your baby. One of the biggest assets the company has is the data it collects on vendors, its products, and customers.
+    
+    When you started the company, you didn’t have much cash to spend on an expensive database program, so you took the first inexpensive option that came your way. Unfortunately, this means your data is not well-modeled, and you’re not really sure how that initial data program’s technical skeleton is structured.
+    
+    After years of growth, you’ve now got cash to invest and want to implement a high quality database management system. However, you want to ensure the transfer is smooth and requires minimal downtime. You hire an IT consultant to execute the transfer.
+    
+    The IT consultant analyzes your data and its structure, and she decides on a new program that’s most efficient to store your data. The project outlines is as follows:
+    
+    Create a conceptual data model for the existing business structure
+    Align this structure with the underlying data in a logical data model
+    Link the logical data model to the new Database Management System (DBMS)
+    Use dummy data to test the database structure in the DBMS
+    Fix bugs
+    Go live with real data in the DBMS
+    The key point to note here is that the data in the current database is structured in a special way. It’s the structure that must be tested, not the data itself. In fact, this dynamic is what allows us to use dummy data in the first place. It’s like taking a practice exam before the real one — it doesn’t count for anything, but it prepares you for the live event.
+    
+    Testing Modifications on Existing Programs
+    Now imagine yourself 5 years after implementation of the Batch Watch DBMS. Although it worked impeccably for years, the DBMS is starting to cause trouble for your data analysts. With the advent of new online data tracking technology, your DBMS has become slightly outdated.
+    
+    But don’t worry. You don’t need a new system — a few program modifications should do the trick, say your data analysts. You let out a sigh of relief.
+    
+    While program modifications are less cumbersome than system replacements, they still require that operations shut down for a small amount of time to allow for implementation of the modification. And before you implement, you need to test the modification with dummy data.
+    
+    For most program modifications, the process looks like the following:
+    
+    Set up a test environment in the DBMS
+    Implement the modification in the test environment
+    Use the copied live data as dummy data
+    Activate the modification in test
+    Fix bugs
+    Go live with the program modification on live data
+    The key point to note here is that program modifications are faster, simpler, and less expensive than system replacement — but the nature of the dummy data used is the same. In many cases, dummy data is nothing more than inactive real data that’s copied from the live system.
+    
+    That said, data analysts also use dummy data generated at random, or generated dummy data. Generated dummy data is most common in projects where:
+    
+    no real data exists because the system is new, or
+    2. copying live data for testing purposes is not possible for technical reasons.
+    In these cases, analysts create dummy data themselves. Let’s look at an example of how to do just that in Excel.
+    
+    How to Create Dummy Data in Excel – 10 Steps
+    Generating dummy data is easy. Data analysts use online resources and generation techniques in programs like Microsoft Excel quickly build dummy data sets.
+    
+    Let’s look at how to generate a test set in 10 steps:
+    
+    Identify observation IDs for the data set. Observation IDs are unique identifiers for each line of the data table. In the case of products, observation IDs could be product names or a numeric substitute. You need to identify the observations on which the table will be based. For example, you might use “PN1, PN2, PN3… PN10” as observation IDs for products.
+    Identify dimensions for the data set. Dimension (or field) is another word for characteristic or trait. They’re a piece of information about the observation ID. You need to identify what information you will include about each product, and include them as headers in your data table. For example, you might use “Product Category, Product Price, Product Weight, Product Brand” as dimensions.
+    Fill in observation ID titles. Once you know them, fill in the observation IDs. To do this, choose cell A1 in an Excel sheet and write “Product ID.” In cell A2, write “PN1.” In cell A3, write “PN2.” Then highlight those two cells and drag the arrow in the bottom right corner down 8 cells. Excel will automatically create a sequence of ten PNs. Look at this short clip to understand:
+   </h1>
+   
+
+    </div>
+</body>
+</html>

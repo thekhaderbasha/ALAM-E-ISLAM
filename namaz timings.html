@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaz-timings</title>
+</head>
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 5.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    
+}
+
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+
+.name{
+    line-height: 5.5rem;
+    font-size: 2.5rem;
+}
+
+.title{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    
+    text-shadow: 2px 2px 2px gray;
+    /* background-color: aqua; */
+}
+
+.continer{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.box_fajar{
+
+    height: 14rem;
+    width: 22rem;
+    background-image: url(images/fajar.jpg);
+    background-size:cover;
+    background-position: center;
+    /* background-color: rgb(255, 252, 62); */
+    text-align: center;
+    display: inline;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box_johar{
+
+height: 14rem;
+width: 22rem;
+background-image: url(images/johar.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+border-radius: 1rem;
+margin-bottom: 1rem;
+}
+
+.box_asar{
+
+height: 14rem;
+width: 22rem;
+background-image: url(images/asar.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+border-radius: 1rem;
+}
+.box_magreeb{
+margin-top: 1rem;
+height: 14rem;
+width: 22rem;
+background-image: url(images/magreeb.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+border-radius: 1rem;
+
+}
+
+.box_isha{
+    margin-top: 1rem;
+height: 14rem;
+width: 22rem;
+background-image: url(images/isha.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+border-radius: 1rem;
+
+}
+.box2{
+    margin-top: 1rem;
+height: 14rem;
+width: 22rem;
+background-image: url(images/juma.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+border-radius: 1rem;
+
+}
+
+h2{
+    height: 4rem;
+    width: 4rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+
+}
+
+h4{
+    height: 3rem;
+    width: 3rem;
+    padding-top: 0.3rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.rakat{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: ;
+}
+
+.num{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: aliceblue;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    word-spacing: 0.5rem;
+}
+
+h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+h6{
+    text-transform: capitalize;
+    background-color: rgba(89, 94, 99, 0.555);
+    padding: 0.5rem;
+    margin-top: -0.8rem;
+}
+
+.note{
+    background-color: rgb(214, 214, 214);
+    margin: 1rem;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform:capitalize;
+    border: 2px solid gray;
+    line-height: 2.5rem;
+}
+
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 600px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 3.5rem;
+
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+
+.logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+
+
+
+
+.name{
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    
+
+}
+.title{
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-shadow: 2px 2px 2px gray;
+    
+    /* background-color: aqua; */
+}
+
+.continer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box_fajar{
+    
+    height: 14rem;
+    width: 20rem;
+    background-image: url(images/fajar.jpg);
+    background-size:cover;
+    background-position: center;
+        text-align: center;
+    display: inline;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.box_johar{
+    
+    height: 14rem;
+    width: 20rem;
+    background-image: url(images/johar.jpg);
+    background-size:cover;
+    background-position: center;
+        text-align: center;
+    display: inline;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.box_asar{
+    
+    height: 14.5rem;
+    width: 20rem;
+    background-image: url(images/asar.jpg);
+    background-size:cover;
+    background-position: center;
+        text-align: center;
+    display: inline;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+}
+.box_magreeb{
+
+height: 14rem;
+width: 20rem;
+background-image: url(images/magreeb.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+margin-bottom: 3rem;
+margin-top: -0.5rem;
+border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.box2{
+margin-top: -0.5rem;
+margin-bottom: 3rem;
+height: 14rem;
+width: 20rem;
+background-image: url(images/juma.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+    border-radius: 1rem;
+}
+.box_isha{
+margin-top: -0.5rem;
+margin-bottom: 3rem;
+height: 14rem;
+width: 20rem;
+background-image: url(images/isha.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+display: inline;
+border: 1px solid black;
+    border-radius: 1rem;
+}
+
+h2{
+    height: 4rem;
+    width: 4rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.178);
+    
+}
+
+.rakat{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.num{
+    display: flex;
+    justify-content: space-around;
+}
+
+h4{
+    height: 3rem;
+    width: 3rem;
+    padding-top: 0.3rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.rakat{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.num{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    padding:0.2 0.3rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    word-spacing: 0.5rem;
+}
+
+h5{
+    font-size: 1.5rem;
+    
+}
+h6{
+    text-transform: capitalize;
+    background-color: rgba(80, 85, 90, 0.555);
+    padding: 0.5rem;
+    margin-top: -0.8rem;
+}
+
+.note{
+    background-color: rgb(214, 214, 214);
+    margin: 1rem;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform:capitalize;
+    border: 2px solid gray;
+    line-height: 2.5rem;
+}
+
+
+}
+</style>
+<body>
+    <div class="nav">
+        <div class="logod"><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+
+    </div>
+    <div class="title">
+        <h7>Namaz rakat's and timing's</h7>
+        </div>
+
+        <div class="continer">
+
+            
+
+
+            <div class="box_fajar">
+               <div> <h1>fajar namaz rakat's</h1></div>
+               <div class="time">
+                   <h5>4:35 AM - 5:52 AM</h5>
+                   <h6>Between the very beginning of dawn and sunrise.</h6>
+               </div>
+                <div class="rakat">
+                <h2>2  </h2>
+                <h2>2 </h2>
+            </div>
+            <div class="num">
+            <h3>sunnat </h3>
+            <h3>farj</h3>
+        </div>
+            </div>
+
+            <div class="box_johar">
+                <div> <h1>johar namaz rakat's</h1></div>
+                <div class="time">
+                    <h5>12:16 PM</h5>
+                    <h6>Between the declining of the sun and Asr</h6>
+                </div>
+                 <div class="rakat">
+                 <h2>4  </h2>
+                 <h2>4 </h2>
+                 <h2>2</h2>
+                 <h2>2</h2>
+             </div>
+             <div class="num">
+             <h3>sunnat </h3>
+             <h3>farj</h3>
+             <h3>sunnat</h3>
+             <h3>nafeel </h3>
+         </div>
+            </div>
+            <div class="box_asar">
+                <div> <h1>asar namaz rakat's</h1></div>
+                <div class="time">
+                    <h5>4:56 PM</h5>
+                    <h6>Immediately after the last time limit of Dhuhr(just before)the sunset</h6>
+                </div>
+                 <div class="rakat">
+                 <h2>4 </h2>
+                 <h2>4 </h2>
+             </div>
+             <div class="num">
+             <h3>sunnat </h3>
+             <h3>farj</h3>
+         </div>
+             </div>
+
+           
+             <div class="box_magreeb">
+                <div> <h1>magreeb namaz rakat's</h1></div>
+                <div class="time">
+                    <h5>6:40 PM</h5>
+                    <h6>Soon after the sunset until the disappearance of the twilight</h6>
+                </div>
+                 <div class="rakat">
+                 <h2>3 </h2>
+                 <h2>2</h2>
+                 <h2>2</h2>
+             </div>
+             <div class="num">
+             <h3>farj</h3>
+             <h3>sunnat</h3>
+             <h3>nafeel </h3>
+         </div>
+            </div>
+
+            <div class="box_isha">
+                <div> <h1>isha namaz rakat's</h1></div>
+                <div class="time">
+                    <h5>7:57 PM</h5>
+                    <h6>After the disappearance of the twilight until midnight.</h6>
+                </div>
+                 <div class="rakat">
+                 <h4>4</h4>
+                 <h4>4 </h4>
+                 <h4>2</h4>
+                 <h4>2</h4>
+                 <h4>3</h4>
+             </div>
+             <div class="num">
+                 <h3>sunnat</h3>
+             <h3>farj</h3>
+             <h3>sunnat</h3>
+             <h3>nafeel </h3>
+             <h3>witar</h3>
+         </div>
+            </div>
+
+            <div class="box2">
+                <div> <h1>jumma johar namaz rakat's</h1></div>
+                 <div class="rakat">
+                 <h4>4</h4>
+                 <h4>2</h4>
+                 <h4>4 </h4>
+                 <h4>2</h4>
+                 <h4>2</h4>
+                 
+             </div>
+             <div class="num">
+                 <h3>sunnat</h3>
+             <h3>farj</h3>
+             <h3>sunnar</h3>
+             <h3>sunnat</h3>
+             <h3>nafeel </h3>
+             
+         </div>
+            </div>
+
+            <div class="note">
+
+                <div class="farz">
+                 <p>  <b>farz</b>The most important prayer in Islam; it is compulsory, and missing it is considered to be a major sin.
+            
+                 </p>
+            
+                 <p>
+                    islam mein sab se ahem "FARAJ-NAMAZ" yeh laazmi hai, aur is ka chodna gunah kbirh mein shumaar hota hai .
+                 </p>
+                </div>
+            
+                <div class="sunnat">
+                    <p>  <b>sunnat</b>
+                        Known to be Prophet Muhammad’s (PBUH) practice, Sunnah Salat is again segregated into two categories, namely Muakkadah and Ghair Muakkadah. The former is to be practiced regularly, and missing the same is regarded as a sin. However, missing the latter one, which is said to be practiced intermittently by Prophet Muhammad (PBUH), is not considered punishable.
+                    </p>
+               
+                    <p>
+                        nabi a kareem salle Allah alaihi wasallam ki sunnat ke tor par jana jata hai, sunnat namaz ko dobarah dho qismon mein taqseem kiya gaya hai,
+                         yani mqd_h aur ghair mqd_h. Sabiqa ​​کو baqaidagi se ada karna hai, aur is ko nah chhorna gunah mein shumaar hota hai. taham, moakhar az zikr ko gayab karna, jis ke baray mein kaha jata hai ke hazrat Mohammad sale Allah alaihi wasallam waqfay waqfay se amal karte thay, qabil saza nahi samjha jata .        </p>
+                   </div>
+                
+                </div>
+            
+
+<div class="note">
+    
+Each prayer has a specific window of time in which it must be completed. These timings are based upon the sun. For this reason, the timings of each prayer window change (marginally and gradually) each day and are different at various times of the year.
+</div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- ----------------------------------------style sheet---------------------------------------------------- -->
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 5.5rem;
+position: sticky;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    
+}
+
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+
+.name{
+    line-height: 5.5rem;
+    font-size: 2.5rem;
+}
+
+
+.second_d{
+    height:70vh;
+    
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+align-items: center;
+    font-size: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+justify-content: space-evenly;
+}
+
+.container{
+    height: 3rem;
+    width: 15rem;
+    /* background-image: linear-gradient(to bottom,#B75800 , black); */
+    background-image: url(images/bgb1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+    margin: ;
+    
+    
+    border-radius: 10rem;
+    box-shadow: 1px 10px 10px black;
+}
+
+
+.overlay{
+    height: 3rem;
+    width: 15rem;
+position: absolute;
+top: 0;
+left: 0;
+font-size: 10px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+opacity: 0;
+background:rgb(151, 148, 148);
+transition: opacity 0.4s;
+border-radius: 6rem;
+}
+
+.content{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+  
+}
+
+.img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+
+}
+
+
+h3{
+    padding-top: 0.5rem;
+}
+
+
+
+.sub{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: rgb(187, 187, 187);
+    height: 3rem;
+margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+h3{
+    font-size: 1.5rem;
+    text-transform:uppercase ;
+    color:white;
+
+}
+
+.title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    text-transform: capitalize;
+}
+/* ------------------------------------------responsive------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(187, 187, 187);
+    height: 3.5rem;
+
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+
+.logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+
+
+
+
+.name{
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+
+}
+
+.second_d{
+    margin-top: 1rem;
+    height:auto ;
+    
+    /* background-color: rgba(0, 0, 0, 0.1); */
+
+    text-align: center;
+
+    font-size: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+justify-content: space-evenly;
+}
+
+
+.container{
+    height: 3rem;
+    width: 15rem;
+    /* background-image: linear-gradient(to bottom,#B75800 , black); */
+    background-color: rgba(0, 0, 0, 0.1) ;
+    position:relative;
+    margin: 3rem 3rem;
+    margin-top: 40px;
+    
+    border-radius: 1rem;
+    box-shadow: 1px 10px 10px black;
+}
+
+.overlay{
+    height: 3rem;
+    width: 15rem;
+position: absolute;
+top: 0;
+left: 0;
+font-size: 10px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+opacity: 0;
+background:rgb(255, 255, 255);
+transition: opacity 0.4s;
+border-radius: 1rem;
+}
+
+.content{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+  
+}
+
+.img{
+    height: 12rem;
+    width: 12rem;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+
+}
+
+footer{
+    background-color: rgb(187, 187, 187);
+    height: 3rem;
+margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logod"><img src="images/logo 2.png" alt="" class="logo"></div>
+      
+        <div class="name">ALAM-E-ISLAM</div>
+
+    </div>
+    
+<div class="second_d">
+  
+
+    <a href="english namaz.html"> <div class="container">
+        <h3>english</h3>
+        <div class="overlay">
+            <div class="content">
+                <h4 class="title">namaz in english</h4>
+            </div>
+        </div>
+   
+    </div></a>
+    <a href="namaz telugu in hindi.html">
+    <div class="container">
+        <h3>telugu</h3>        <div class="overlay">
+            <div class="content">
+                <h4 class="title">namaz in telugu</h4>
+            </div>
+        </div>
+
+    </div></a>
+
+    
+   <a href="urdu namaz.html"> <div class="container">
+    <h3>hindi</h3>        <div class="overlay">
+            <div class="content">
+                <h4 class="title">namaz in hindi</h4>
+            </div>
+        </div>
+    </div></a>
+
+    <a href="telugu namaz.html">
+    <div class="container">
+        <h3>తెలుగు</h3>        <div class="overlay">
+            <div class="content">
+                <h4 class="title">తెలుగు నమాజ్</h4>
+            </div>
+        </div>
+    </div></a>
+
+  
+  
+        </div>
+    </div>
+    
+    <footer>
+        <p>feedback or any complaints drop a mail thekhaderbasha@gmail.com</p>
+    </footer>
+    
+    
+</div>
+</body>
+</html>
